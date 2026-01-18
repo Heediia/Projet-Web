@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><h1>Quiz HTML / JS</h1>
+<nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="evenements.html">Evenements</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav></header>
+
+
+<main>
+<section>
+<form id="quizForm">
+
+
+<h2>HTML</h2>
+<p>1) HTML signifie :</p>
+<label><input type="radio" name="q1" value="a"> HyperText Markup Language</label><br>
+<label><input type="radio" name="q1" value="b"> HighText Machine Language</label><br><br>
+
+
+<p>2) Quelle balise est sémantique ?</p>
+<label><input type="radio" name="q2" value="a"> &lt;div&gt;</label><br>
+<label><input type="radio" name="q2" value="b"> &lt;header&gt;</label><br><br>
+
+
+<p>3) Quelle balise sert à créer un lien ?</p>
+<label><input type="radio" name="q3" value="a"> &lt;a&gt;</label><br>
+<label><input type="radio" name="q3" value="b"> &lt;link&gt;</label><br><br>
+
+
+<p>4) L’attribut alt sert à :</p>
+<label><input type="radio" name="q4" value="a"> Décrire une image</label><br>
+<label><input type="radio" name="q4" value="b"> Changer sa taille</label><br><br>
+
+
+<p>5) Quelle balise contient le contenu principal ?</p>
+<label><input type="radio" name="q5" value="a"> &lt;main&gt;</label><br>
+<label><input type="radio" name="q5" value="b"> &lt;body&gt;</label><br><br>
+
+
+<h2>CSS</h2>
+<p>6) CSS signifie :</p>
+<label><input type="radio" name="q6" value="a"> Cascading Style Sheets</label><br>
+<label><input type="radio" name="q6" value="b"> Creative Style System</label><br><br>
+<p>7) Quelle propriété change la couleur du texte ?</p>
+<label><input type="radio" name="q7" value="a"> color</label><br>
+<label><input type="radio" name="q7" value="b"> text-style</label><br><br>
+
+
+<p>8) Quelle unité est relative ?</p>
+<label><input type="radio" name="q8" value="a"> px</label><br>
+<label><input type="radio" name="q8" value="b"> %</label><br><br>
+
+
+<p>9) Quelle propriété arrondit les coins ?</p>
+<label><input type="radio" name="q9" value="a"> border-radius</label><br>
+<label><input type="radio" name="q9" value="b"> box-shadow</label><br><br>
+
+
+<p>10) Quel sélecteur cible une classe ?</p>
+<label><input type="radio" name="q10" value="a"> .classe</label><br>
+<label><input type="radio" name="q10" value="b"> #classe</label><br><br>
+
+
+<h2>JavaScript</h2>
+<p>11) JavaScript est un langage :</p>
+<label><input type="radio" name="q11" value="a"> Interprété</label><br>
+<label><input type="radio" name="q11" value="b"> Compilé uniquement</label><br><br>
+
+
+<p>12) Quelle instruction affiche un message ?</p>
+<label><input type="radio" name="q12" value="a"> alert()</label><br>
+<label><input type="radio" name="q12" value="b"> print()</label><br><br>
+
+
+<p>13) Quelle fonction convertit en entier ?</p>
+<label><input type="radio" name="q13" value="a"> parseInt()</label><br>
+<label><input type="radio" name="q13" value="b"> toString()</label><br><br>
+
+
+<p>14) Quel symbole signifie ET logique ?</p>
+<label><input type="radio" name="q14" value="a"> &&</label><br>
+<label><input type="radio" name="q14" value="b"> ||</label><br><br>
+<p>15) Quel événement se déclenche au clic ?</p>
+<label><input type="radio" name="q15" value="a"> onclick</label><br>
+<label><input type="radio" name="q15" value="b"> onload</label><br><br>
+
+
+<button type="button" onclick="corrigerQuiz()">Valider le quiz</button>
+</form>
+
+
+<p id="resultat"></p>
+</section>
+</main>
+
+
+<script src="js/quiz.js"></script>
+</body>
+</html>

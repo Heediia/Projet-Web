@@ -1,0 +1,213 @@
+:root {
+    --baby-pink: #f6c1cc;
+    --soft-pink: #fde6eb;
+    --dark-pink: #d88c9a;
+    --text-dark: #333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    background-color: var(--soft-pink);
+    color: var(--text-dark);
+}
+
+header {
+    background: linear-gradient(90deg, var(--baby-pink), var(--dark-pink));
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.8;
+}
+
+section {
+    background-color: var(--white);
+    margin: 30px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: var(--dark-pink);
+    border-bottom: 2px solid var(--baby-pink);
+    padding-bottom: 5px;
+}
+
+.photo {
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--baby-pink);
+}
+
+ul {
+    line-height: 1.8;
+}
+
+form {
+    background-color: var(--soft-pink);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+form p {
+    font-weight: 600;
+}
+
+button {
+    background-color: var(--dark-pink);
+    color: var(--white);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#resultat {
+    margin-top: 20px;
+    font-weight: bold;
+    color: var(--dark-pink);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--baby-pink);
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--dark-pink);
+}
+
+input[type="submit"] {
+    background-color: var(--baby-pink);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dark-pink);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    color: var(--dark-pink);
+}
+
+.events {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.event-card {
+    display: flex;
+    background-color: var(--soft-pink);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-card img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-right: 4px solid var(--baby-pink);
+}
+
+.event-content {
+    padding: 20px;
+}
+
+.event-content h3 {
+    margin-top: 0;
+    color: var(--dark-pink);
+}
+
+.event-content span {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.event-content p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+
+#passions-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 0;
+}
+
+#passions-list li {
+    list-style: none;
+}
+
+#passions-list button {
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+#passion-image img {
+    max-width: 300px;
+    border: 4px solid var(--baby-pink);
+    border-radius: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#passion-image img:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Mes Passions</title>
+<link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+
+<header>
+        <h1>Mes Passions</h1>
+<nav>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="parcours.html">Parcours</a></li>
+      <li><a href="competences.html">Compétences</a></li>
+      <li><a href="experiences.html">Expériences</a></li>
+      <li><a href="evenements.html">Evenements</a></li>
+      <li><a href="passions.html">Passions</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav></header>
+
+
+<section>
+    <h2>Découvrez mes passions</h2>
+    <ul id="passions-list">
+        <li><button onclick="showImage('photographie')">Photographie</button></li>
+        <li><button onclick="showImage('creation-logo')">Création de logos</button></li>
+        <li><button onclick="showImage('lecture')">Lecture de romans</button></li>
+        <li><button onclick="showImage('patisserie')">Pâtisserie</button></li>
+    </ul>
+
+    <div id="passion-image" style="text-align:center; margin-top:20px;">
+        <!-- L'image de la passion s'affichera ici -->
+        <img id="image-display" src="" alt="" class="photo" style="display:none;">
+    </div>
+</section>
+
+<script>
+function showImage(passion) {
+    const image = document.getElementById('image-display');
+    switch(passion) {
+        case 'photographie':
+            image.src = 'images/sky.jpeg';
+            image.alt = 'Photographie';
+            break;
+        case 'creation-logo':
+            image.src = 'images/logo1.jpeg';
+            image.alt = 'Création de logos';
+            break;
+        case 'lecture':
+            image.src = 'images/novels.jpg';
+            image.alt = 'Lecture de romans';
+            break;
+        case 'patisserie':
+            image.src = 'images/baking.jpg';
+            image.alt = 'Pâtisserie';
+            break;
+    }
+    image.style.display = 'block';
+}
+</script>
+</body>
+</html>
